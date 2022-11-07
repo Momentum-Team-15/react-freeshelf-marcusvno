@@ -9,20 +9,19 @@ function Freeshelf() {
     const [posts, setPosts] = React.useState([]);
   
     React.useEffect(() => {
-      axios.get(`https://www.reddit.com/r/roguelikedev.json`)
+      axios.get(`./bookData.json`)
         .then(res => {
-          const newPosts = res.data.data.children.map(obj => obj.data);
+          const newPosts = res.map(obj => obj.data);
           setPosts(newPosts);
         });
     }, []);
   
     return (
       <div>
-        <h1>/r/reactjs</h1>
+        <h1>Freeshelf</h1>
         <ul>
           {posts.map(post => (
-            <li key={post.id}><a href={`https://reddit.com${post.permalink}`}>
-              {post.title}</a> - {post.author} - +{post.ups}</li>
+            <li key={post.id}>{post.author}</li>
           ))}
         </ul>
       </div>
