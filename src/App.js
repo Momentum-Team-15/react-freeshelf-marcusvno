@@ -29,6 +29,7 @@ function App({ bookData }) {
                 </div>
                 
             ))}
+            <footer></footer>
             </div>
         </div>
     );
