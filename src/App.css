@@ -20,6 +20,10 @@ img{
     border: 1px solid black;
 }
 
+.author{
+    margin-left:10px;
+}
+
 ul{
     list-style:none;
 }

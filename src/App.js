@@ -15,7 +15,7 @@ function App({ bookData }) {
                     <div className="bookInfo">
                         <ul>
                             <li><h3>{data.title}</h3></li>
-                            <li>by {data.author}</li>
+                            <li className="author">by {data.author}</li>
                             <li><p>{data.shortDescription}</p></li>
                             <li><ExpandedInfo 
                                 url={data.url} 
