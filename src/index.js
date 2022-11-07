@@ -3,59 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import axios from 'axios';
-
-function Freeshelf() {
-    const [posts, setPosts] = React.useState([]);
-  
-    React.useEffect(() => {
-      axios.get(`./bookData.json`)
-        .then(res => {
-          const newPosts = res.map(obj => obj.data);
-          setPosts(newPosts);
-        });
-    }, []);
-  
-    return (
-      <div>
-        <h1>Freeshelf</h1>
-        <ul>
-          {posts.map(post => (
-            <li key={post.id}>{post.author}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-
-
-
+import data from './bookData.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-      <Freeshelf />
-    </React.StrictMode>
-  );
-  
-
-
-
-
-
-
-
-/* root.render(
   <React.StrictMode>
-    <App />
+    <App bookData={data}/>
   </React.StrictMode>
 );
- */
-
-
-
-
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
