@@ -42,8 +42,8 @@ ul{
 }
 
 button{
-  padding: 0.5rem 0;
-  width: 5rem;
+  padding: 0.5rem 0.5rem;
+  width: 5.5rem;
   background: teal;
   border: 0;
   box-shadow: none;
