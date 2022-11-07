@@ -6,6 +6,7 @@ function App({ bookData }) {
     return (
         <div>
             <h1>Freeshelf</h1>
+            <div className="grid">
             {bookData.map((data) => (
                 <div className="wrapper">
                     <div className="imageLoc">
@@ -26,7 +27,9 @@ function App({ bookData }) {
                             
                     </div>
                 </div>
+                
             ))}
+            </div>
         </div>
     );
 }
