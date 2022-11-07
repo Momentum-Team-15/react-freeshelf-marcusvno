@@ -1,4 +1,48 @@
-.App {
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 20px;
+    color:aliceblue;
+    background-color:teal;
+ }
+
+.wrapper{
+    display: flex;
+    margin: 25px 15%;
+}
+
+img{
+    width: 210px;
+    border: 1px solid black;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+  padding: 0.5rem 0;
+  width: 5rem;
+  background: teal;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  color:white;
+}
+
+button:hover{
+    background-color:#004646;
+}
+
+.expandedBox,
+.longDesc{
+    margin-left:10px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +79,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
