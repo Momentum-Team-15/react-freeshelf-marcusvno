@@ -3,6 +3,7 @@
 }
 
 
+
 h1{
     margin: 0;
     padding: 20px;
@@ -10,19 +11,31 @@ h1{
     background-color:teal;
  }
 
+ /* USE FOR SINGLE COLUMN PAGE*/
 .wrapper{
     display: flex;
-    margin: 25px 15%;
+    margin: 30px 15%;
 }
+
+ /* USED FOR DOUBLE COLUMN PAGE */
+/* .grid{
+    display:grid;
+    grid-template-columns:auto auto;
+}
+
+.wrapper{
+    display: flex;
+    margin:10px;
+} */
+
+
+
 
 img{
     width: 210px;
     border: 1px solid black;
 }
 
-.author{
-    margin-left:10px;
-}
 
 ul{
     list-style:none;
