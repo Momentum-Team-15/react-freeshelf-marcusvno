@@ -1,5 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
+import placeholder from "./no-cover-image.png";
+
+
+const fixBrokenImage = (e) => { e.target.src = placeholder; }
 
 
 function App({ bookData }) {
@@ -10,7 +14,7 @@ function App({ bookData }) {
             {bookData.map((data) => (
                 <div className="wrapper">
                     <div className="imageLoc">
-                        <img src={data.coverImageUrl} alt="cover"/>
+                        <img src={data.coverImageUrl} alt="cover" onError={fixBrokenImage}/>
                     </div>
                     <div className="bookInfo">
                         <ul>
